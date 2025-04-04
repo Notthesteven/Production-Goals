@@ -1,0 +1,322 @@
+/**
+ * Production Goals - Admin Styles
+ */
+
+/* Main container */
+.pg-admin-wrap {
+    margin: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Tabs Navigation */
+.pg-admin-tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pg-admin-tab-button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    margin-bottom: -1px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+}
+
+.pg-admin-tab-button:hover {
+    background: #e5e5e5;
+}
+
+.pg-admin-tab-button.active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #0073aa;
+}
+
+/* Tab Content */
+.pg-admin-tab-content {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.pg-admin-tab-content.active {
+    display: block;
+}
+
+/* Cards */
+.pg-admin-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pg-admin-card h2 {
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Forms */
+.pg-form-row {
+    margin-bottom: 15px;
+}
+
+.pg-form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.pg-form-row input[type="text"],
+.pg-form-row input[type="number"],
+.pg-form-row input[type="url"],
+.pg-form-row select,
+.pg-form-row textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pg-form-row input[type="file"] {
+    padding: 8px 0;
+}
+
+.pg-form-row .description {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Role Checkboxes */
+.pg-role-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.pg-role-checkbox {
+    flex: 0 0 33.333%;
+    margin-bottom: 8px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+/* Project Actions */
+.pg-project-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Button styles */
+.button-delete {
+    color: #a00;
+    border-color: #a00;
+}
+
+.button-delete:hover {
+    color: #dc3232;
+    border-color: #dc3232;
+}
+
+.button-link-delete {
+    color: #a00;
+    text-decoration: underline;
+}
+
+/* Parts List */
+.pg-parts-list {
+    margin-bottom: 20px;
+}
+
+.pg-parts-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pg-parts-list th,
+.pg-parts-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pg-parts-list th {
+    font-weight: 600;
+    background-color: #f9f9f9;
+}
+
+.pg-parts-list tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* File Info */
+.pg-file-info {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.pg-file-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Completed Goals */
+.pg-completed-goal {
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+.pg-completed-header {
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pg-completed-header h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.pg-completed-details {
+    padding: 15px;
+}
+
+/* Contributions Container */
+.pg-contributions-container {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.pg-contributions-container ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Modal */
+.pg-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pg-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.pg-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.pg-modal-close:hover {
+    color: #555;
+}
+
+/* Shortcodes List */
+.pg-shortcodes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.pg-shortcode-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.pg-shortcode-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0073aa;
+}
+
+.pg-shortcode-example {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-family: monospace;
+    position: relative;
+}
+
+.pg-shortcode-example code {
+    display: block;
+    margin-bottom: 5px;
+    word-break: break-all;
+}
+
+.pg-shortcode-example button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .pg-role-checkbox {
+        flex: 0 0 50%;
+    }
+    
+    .pg-admin-tab-nav {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    .pg-admin-tab-button {
+        margin-right: 0;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .pg-admin-tab-button.active {
+        border-bottom: 1px solid #0073aa;
+    }
+    
+    .pg-shortcodes-list {
+        grid-template-columns: 1fr;
+    }
+}
